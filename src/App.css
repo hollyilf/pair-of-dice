@@ -1,38 +1,83 @@
-.App {
+* {
+  font-family: "Comfortaa";
+}
+
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  padding: 30px;
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.dice-div {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+}
+
+.col-player1 {
+  text-align: right;
+}
+
+.col-player2 {
+  text-align: left;
+}
+
+.dice {
+  height: 170px;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 40px auto 0;
+  width: 200px;
+}
+
+footer {
+  font-size: 0.7rem;
+  position: fixed;
+  bottom:0px;
+  left:0px;
+  text-align: center;
+  width:100%;
+} 
+
+.fa-github {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+}
+
+@media (max-width: 448px) {
+  h1 {
+    padding: 15px 0 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  p {
+    font-size: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  .dice {
+    height: 150px;
+    margin: 15px 0 15px;
+  }
+  .col-player1 {
+    text-align: center;
+  }
+  .col-player2 {
+    text-align: center;
+  }
+  .btn {
+    margin: 0 auto 0;
+    width: 150px;
   }
 }
